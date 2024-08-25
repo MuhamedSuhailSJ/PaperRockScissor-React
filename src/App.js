@@ -1,11 +1,12 @@
+import RockPaperScissors from './components/RockPaperScissors'
+
 import './App.css'
-import Game from './components/GameComponent'
 
 const choicesList = [
   {
-    id: 'PAPER',
+    id: 'ROCK',
     imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/paper-image.png',
+      'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rock-image.png',
   },
   {
     id: 'SCISSORS',
@@ -13,12 +14,12 @@ const choicesList = [
       'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/scissor-image.png',
   },
   {
-    id: 'ROCK',
+    id: 'PAPER',
     imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rock-image.png',
+      'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/paper-image.png',
   },
 ]
 
-const App = () => <Game choicesList={choicesList} />
+const App = () => <RockPaperScissors choicesList={choicesList} />
 
 export default App
